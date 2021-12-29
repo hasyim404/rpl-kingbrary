@@ -387,3 +387,7 @@ footer{
 .nav-info a:hover {
     opacity: 0.9;
 }
+
+.rounded-carousel {
+    background-color: rgb(92, 92, 92);
+}

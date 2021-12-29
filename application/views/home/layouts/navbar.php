@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Navbar Info -->
     <nav class="nav-info d-flex justify-content-end">
         <a href="#about">About</a>
         <a href="#!">FaQ</a>
     </nav>
+
+    <!-- Main Navbar -->
     <nav class="navbar sticky-top navbarOri navbar-expand-lg navbar-dark">
         <div class="container-fluid mx-2">
             <a class="navbar-brand" href="<?php echo base_url('index.php') ?>">
