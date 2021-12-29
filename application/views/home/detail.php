@@ -1,10 +1,10 @@
 
     <div class="container pt-5" >
         <div class="row">
-            <div class="col-3">
+            <div class="col-sm-3">
                 <img src="<?php echo base_url('public/gambar/rpl-php-example-image.jpeg') ?>" class="img-fluid rounded mx-auto d-block" alt="...">
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <p>PROF. DR. IR. RIRI FITRI SARI, M.M., M.SC., DTM, SMIEEE</p>
                 <h2>Rekayasa Perangkat Lunak Berorientasi Objek Menggunakan Php</h2>
 
@@ -74,7 +74,7 @@
                 </div>
             </div>
             
-            <div class="col-3">
+            <div class="col-sm-3">
                 <div class="kotak">
                     <h5 class="text-secondary">Ingin beli berapa?</h5>
                     <h5>Jumlah Barang</h5>
@@ -98,7 +98,7 @@
 
         <!-- Diskusi -->
         <div class="row">
-            <div class="col-9">
+            <div class="col-sm-9">
                 <div class="diskusi">
                     <h5>Diskusi</h5>
                     <h5 class="namaBukuDiskusi mb-4">Rekayasa Perangkat Lunak Berorientasi Objek Menggunakan Php</h5>
@@ -112,13 +112,13 @@
 
         </div>
         <div class="row">
-            <div class="col-9">
+            <div class="col-sm-9">
                 <div class="diskusiBox d-flex justify-content-start ">
                     <div class="row ">
-                        <div class="col-1">
+                        <div class="col-sm-1">
                             <img class="komentar-profile rounded-circle" width="50" height="50" src="https://dummyimage.com/50x50/ed62ed/ffffff" alt="">
                         </div>
-                        <div class="col">
+                        <div class="col-sm">
                             <p class="p1" >User Account <span>- [ tanggal ]</span></p><br>
                             <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius?</p>   
                         </div>
@@ -127,13 +127,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-9">
+            <div class="col-sm-9">
                 <div class="diskusiBox reply">
                     <div class="row ">
-                        <div class="col-2 d-flex justify-content-end">
+                        <div class="col-sm-2 d-flex justify-content-end">
                             <img class="komentar-profile rounded-circle" width="50" height="50" src="https://dummyimage.com/50x50/2e252e/ffffff" alt="">
                         </div>
-                        <div class="col">
+                        <div class="col-sm">
                             <p class="p1" >Admin Account <span>- [ tanggal ]</span></p><br>
                             <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius?</p>   
                         </div>

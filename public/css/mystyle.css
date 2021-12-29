@@ -1,22 +1,20 @@
 body{
     background-color: #DCE2DC;
-    position: relative;
-    min-height: 100vmax;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #678F70;
-    height: 60px;
+.navbarOri{
+    background-color: #678F70 !important;
 }
 
-.nav-brand{
+/* .nav-brand{
     margin-left: 30px;
     margin-top: 0;
-}
+} */
 
+.identity-profile a span{
+    margin-left: 5px;
+    padding-top: 4px;
+}
 
 .link-home{
     color: #FFFBFB;
@@ -33,13 +31,63 @@ nav{
     font-size: 16px;
 }
 
+.nav-item .logout-btn {
+    background-color: #f01d1d;
+    opacity: 0.8;
+    border-radius: 10px;
+    color: #FFFBFB;
+}
+
+.nav-item .logout-btn:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.nav-item .register-btn {
+    background-color: #f01d1d;
+    opacity: 0.8;
+    border-radius: 10px;
+    color: #FFFBFB;
+}
+
+.nav-item .register-btn:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.nav-item .login-btn {
+    background-color: #f01d1d;
+    opacity: 0.8;
+    border-radius: 10px;
+    color: #FFFBFB;
+}
+
+.nav-item .login-btn:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.nav-item ul {
+    padding: 10px;
+}
+
 .search{
-    width: 500px;
-    border-radius: 12px;
-    height: 30px;
+    border-radius: 35px;
+    /* height: 30px; */
     background-color: #D2D2D2;
     border: none;
-    padding-left: 15px;
+}
+
+.search span button{
+    padding: auto;
+    border: none;
+    background: none;
+}
+
+.search span{
+    border-radius: 35px;
+    color: black;
+    border: none;
 }
 
 .nav-search i{
@@ -86,122 +134,8 @@ nav{
     font-family: Verdana;
 }
 
-.card1 .card{
-    position: absolute;
-    border-style: none;
-    left: 60px;
-    top: 600px;
-    background-color: #D2D2D2;
-}
-
-.card1 img{
-    width: 150px;
-    margin-left: 45px;
-}
-
-.card1 h5{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card1 p{
-    font-weight: bold;
-}
-
-.card2 .card{
-    position: absolute;
-    border-style: none;
-    left: 310px;
-    top: 600px;
-    background-color: #D2D2D2;
-}
-
-.card2 img{
-    width: 150px;
-    margin-left: 45px;
-}
-
-.card2 h5{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card2 p{
-    font-weight: bold;
-}
-
-.card3 .card{
-    position: absolute;
-    border-style: none;
-    left: 560px;
-    top: 600px;
-    background-color: #D2D2D2;
-}
-
-.card3 img{
-    width: 150px;
-    margin-left: 45px;
-    height: 225px;
-}
-
-.card3 h5{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card3 p{
-    font-weight: bold;
-}
-
-.card4 .card{
-    position: absolute;
-    border-style: none;
-    left: 810px;
-    top: 600px;
-    background-color: #D2D2D2;
-}
-
-.card4 img{
-    width: 150px;
-    margin-left: 45px;
-    height: 225px;
-}
-
-.card4 h5{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card4 p{
-    font-weight: bold;
-}
-
-.card5 .card{
-    position: absolute;
-    border-style: none;
-    left: 1060px;
-    top: 600px;
-    background-color: #D2D2D2;
-}
-
-.card5 img{
-    width: 150px;
-    margin-left: 45px;
-    height: 248px;
-}
-
-.card5 h5{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.card5 p{
-    font-weight: bold;
-}
-
 footer{
-    background-color: #678F70;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 35px;
-    text-align: center;
+        background-color: #678F70;
 }
 
 .copyright{
@@ -242,7 +176,7 @@ footer{
     padding: 1rem;
     width: auto;
     background-color: #E8E8E8;
-    box-shadow: 3px 4px 10px rgba(0,0,0,0.4);
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.2);
     border-radius: 8px;
 }
 
@@ -392,4 +326,64 @@ footer{
 .diskusiBox.reply p {
    margin-left: -10px;
 
+}
+
+.hapus a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hapus a:hover {
+    border-bottom: solid 1px black;
+    color: black;
+}
+
+.checkoutFont h5{
+    color: #787878;
+}
+
+.card {
+    background-color: #e9f0e9 ;
+    padding: 15px;
+    margin-bottom: -20px;
+}
+
+.card img {
+    height: 230px;
+    margin-top: -15px;
+}
+
+.card .card-footer {
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.link-detail {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.link-detail .card:hover {
+    color: black;
+    box-shadow: 3px 4px 15px rgba(0,0,0,0.1);
+    transition: 0.8;
+}
+
+.nav-info {
+    width: auto;
+    background-color: rgb(63, 100, 72);
+}
+
+.nav-info a {
+    margin-bottom: 0px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.nav-info a:hover {
+    opacity: 0.9;
 }
