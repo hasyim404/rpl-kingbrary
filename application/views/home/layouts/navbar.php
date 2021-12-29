@@ -18,7 +18,7 @@
             <img src="<?php echo base_url('public/gambar/brand.svg') ?>" alt=""/>
         </div>
         <div class="nav-home">
-            <a href="index.html" style="text-decoration: none;" class="link-home">Home</a>
+            <a href="<?php echo base_url('index.php') ?>" style="text-decoration: none;" class="link-home">Home</a>
         </div>
         <div class="nav-kategori">
             <select class="kategori" aria-label="Kategori">

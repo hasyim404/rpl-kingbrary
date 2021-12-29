@@ -15,4 +15,12 @@ class Home extends CI_Controller {
 		$this->load->view('home/detail.php');
 		$this->load->view('home/layouts/footer.php');
 	}
+
+	public function keranjang()
+	{
+		$this->load->view('home/layouts/navbar.php');
+		$this->load->view('home/keranjang.php');
+		$this->load->view('home/layouts/footer.php');
+	}
+
 }

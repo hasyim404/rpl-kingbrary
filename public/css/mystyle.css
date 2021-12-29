@@ -1,5 +1,5 @@
 body{
-    background-color: #DCE2DC;;
+    background-color: #DCE2DC;
     position: relative;
     min-height: 100vmax;
 }
@@ -86,11 +86,112 @@ nav{
     font-family: Verdana;
 }
 
-.card1{
+.card1 .card{
     position: absolute;
-    border-style: groove;
+    border-style: none;
     left: 60px;
     top: 600px;
+    background-color: #D2D2D2;
+}
+
+.card1 img{
+    width: 150px;
+    margin-left: 45px;
+}
+
+.card1 h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card1 p{
+    font-weight: bold;
+}
+
+.card2 .card{
+    position: absolute;
+    border-style: none;
+    left: 310px;
+    top: 600px;
+    background-color: #D2D2D2;
+}
+
+.card2 img{
+    width: 150px;
+    margin-left: 45px;
+}
+
+.card2 h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card2 p{
+    font-weight: bold;
+}
+
+.card3 .card{
+    position: absolute;
+    border-style: none;
+    left: 560px;
+    top: 600px;
+    background-color: #D2D2D2;
+}
+
+.card3 img{
+    width: 150px;
+    margin-left: 45px;
+    height: 225px;
+}
+
+.card3 h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card3 p{
+    font-weight: bold;
+}
+
+.card4 .card{
+    position: absolute;
+    border-style: none;
+    left: 810px;
+    top: 600px;
+    background-color: #D2D2D2;
+}
+
+.card4 img{
+    width: 150px;
+    margin-left: 45px;
+    height: 225px;
+}
+
+.card4 h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card4 p{
+    font-weight: bold;
+}
+
+.card5 .card{
+    position: absolute;
+    border-style: none;
+    left: 1060px;
+    top: 600px;
+    background-color: #D2D2D2;
+}
+
+.card5 img{
+    width: 150px;
+    margin-left: 45px;
+    height: 248px;
+}
+
+.card5 h5{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card5 p{
+    font-weight: bold;
 }
 
 footer{
@@ -217,4 +318,78 @@ footer{
 
 .diskusi .namaBukuDiskusi {
     color: #6E716E;
+}
+
+.kotakDiskusi {
+    padding: 8px;
+    width: auto;
+    background-color: #E8E8E8;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.4);
+    border-radius: 8px;
+}
+
+.discuss-logo {
+    width: 60px;
+    height: 60px;
+}
+
+.diskusi p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.diskusi button {
+    border: none;
+    background-color: #80B5e6;
+    color: #ffffff;
+    border-radius: 30px;
+    margin: 10px;
+    margin-right: 5px;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.4);
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.diskusi button:hover {
+    filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.1));
+    opacity: 1;
+}
+
+.diskusiBox {
+    background-color: #ededed;
+    padding: 1rem;
+    width: auto; 
+    border-right: solid 1px #d9d9d9;
+    border-left: solid 1px #d9d9d9;
+    border-radius: 2px;
+}
+
+.komentar-profile {
+
+}
+
+.diskusiBox p {
+    color: #282828;
+    margin-left: 15px;
+
+}
+
+.diskusiBox p span {
+    color: #ababab;
+}
+
+.diskusiBox .p2 {
+    margin-top: -40px;
+    margin-bottom: auto;
+}
+
+.diskusiBox.reply{
+    background-color: #e8e8e8;
+    border-top: solid 1px #d9d9d9;
+    border-bottom: solid 1px #d9d9d9;
+}
+
+.diskusiBox.reply p {
+   margin-left: -10px;
+
 }

@@ -101,22 +101,46 @@
             <div class="col-9">
                 <div class="diskusi">
                     <h5>Diskusi</h5>
-                    <h5 class="namaBukuDiskusi">Rekayasa Perangkat Lunak Berorientasi Objek Menggunakan Php</h5>
+                    <h5 class="namaBukuDiskusi mb-4">Rekayasa Perangkat Lunak Berorientasi Objek Menggunakan Php</h5>
+                    <div class="kotakDiskusi d-flex bd-highlight mb-3">
+                        <img class="discuss-logo p-2 bd-highlight" src="<?php echo base_url('public/gambar/discuss-logo.png') ?>" alt="">
+                        <p class="p-2 bd-highlight" >Ada pertanyaan terkait buku ini? Diskusikan dengan admin di sini</p>
+                        <button class="btn-sm ms-auto p-2 bd-highlight" >Tulis Pertanyaan</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-9">
+                <div class="diskusiBox d-flex justify-content-start ">
+                    <div class="row ">
+                        <div class="col-1">
+                            <img class="komentar-profile rounded-circle" width="50" height="50" src="https://dummyimage.com/50x50/ed62ed/ffffff" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="p1" >User Account <span>- [ tanggal ]</span></p><br>
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius?</p>   
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-    <script>
-        const readMoreBtn = document.querySelector(".read-more-btn");
-        const text = document.querySelector(".text");
+        <div class="row">
+            <div class="col-9">
+                <div class="diskusiBox reply">
+                    <div class="row ">
+                        <div class="col-2 d-flex justify-content-end">
+                            <img class="komentar-profile rounded-circle" width="50" height="50" src="https://dummyimage.com/50x50/2e252e/ffffff" alt="">
+                        </div>
+                        <div class="col">
+                            <p class="p1" >Admin Account <span>- [ tanggal ]</span></p><br>
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eius?</p>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        readMoreBtn.addEventListener("click", (e) => {
-        text.classList.toggle("show-more");
-        if (readMoreBtn.innerHTML === "Baca Selengkapnya") {
-            readMoreBtn.innerHTML = "Lebih sedikit";
-        } else {
-            readMoreBtn.innerHTML = "Baca Selengkapnya";
-        }
-        });
-    </script>
+    </div>
+
