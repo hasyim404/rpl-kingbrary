@@ -2,11 +2,11 @@
     <div class="container pt-5" >
         <div class="row">
             <div class="col-sm-3">
-                <img src="<?php echo base_url('public/gambar/rpl-php-example-image.jpeg') ?>" class="img-fluid rounded mx-auto d-block" alt="...">
+                <img src="<?php echo base_url('public/gambar/').$buku->gambar; ?>" class="img-fluid rounded mx-auto d-block" alt="...">
             </div>
             <div class="col-sm-6">
-                <p>PROF. DR. IR. RIRI FITRI SARI, M.M., M.SC., DTM, SMIEEE</p>
-                <h2>Rekayasa Perangkat Lunak Berorientasi Objek Menggunakan Php</h2>
+                <p><?= $buku->penulis; ?></p>
+                <h2><?= $buku->nama; ?></h2>
 
                 <div class="navbar navbar-expand-lg navbar-light border-bottom border-dark">
                     <ul class="navbar-nav detail-nav">
@@ -21,10 +21,10 @@
 
                 <div class="mt-4">
                     <h6 id="deskripsi">Deskripsi Buku</h6>   
-                    <p class="text">Buku Rekayasa Perangkat Lunak Berbasis Objek berbasis bahasa PHP ini dibuat untuk digunakan pada <span class="dots">...</span>
-                        <span class="moreText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, provident Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, provident. </span>
+                    <p class="text"> <span class="dots">......</span>
+                        <span class="moreText"><?= $buku->deskripsi_buku; ?></span>
                     </p>
-                    <a class="read-more-btn d-flex justify-content-end" href="#!" >Baca Selengkapnya</a>
+                    <a class="read-more-btn d-flex justify-content-end" href="#!" >Lihat Deskripsi</a>
 
                     <h6 id="detail" class="mt-2">Detail Buku</h6>
                     <div class="tableDetail">
@@ -35,8 +35,8 @@
                                 <td >Penerbit</td>
                             </tr>
                             <tr>
-                                <td class="two">304</td>
-                                <td class="two">Andi Offest</td>
+                                <td class="two"><?= $buku->jml_halaman; ?></td>
+                                <td class="two"><?= $buku->penerbit; ?></td>
                             </tr>
 
                             <!-- 2 -->
@@ -45,8 +45,8 @@
                                 <td>Berat</td>
                             </tr>
                             <tr>
-                                <td class="two">30 Nov 2021</td>
-                                <td class="two">0.405 kg</td>
+                                <td class="two"><?= $buku->tgl_terbit; ?></td>
+                                <td class="two"><?= $buku->berat; ?></td>
                             </tr>
 
                             <!-- 3 -->
@@ -55,8 +55,8 @@
                                 <td >Lebar</td>
                             </tr>
                             <tr>
-                                <td class="two">9786230117886</td>
-                                <td class="two">16.0 cm</td>
+                                <td class="two"><?= $buku->isbn; ?></td>
+                                <td class="two"><?= $buku->lebar; ?></td>
                             </tr>
 
                             <!-- 4 -->
@@ -65,8 +65,8 @@
                                 <td>Panjang</td>
                             </tr>
                             <tr>
-                                <td class="two">Indonesia</td>
-                                <td class="two">23.0cm</td>
+                                <td class="two"><?= $buku->bahasa; ?></td>
+                                <td class="two"><?= $buku->panjang; ?></td>
                             </tr>
                             
                         </table>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="pt-2 pb-3 d-flex justify-content-between">
                         <h5>Subtotal: </h5>   
-                        <h5>RP. 89.000</h5>
+                        <h5><?= $buku->harga; ?></h5>
                     </div>
                     <div class="btnEnd d-flex justify-content-between">
                         <button class="btn-sm btnKeranjang"><i class="fas fa-shopping-cart"></i> keranjang</button>

@@ -16,8 +16,6 @@
               <small>- (0110xxxxxx) Name </small>
           </div>
           <!--Grid column-->
-
-          <!--Grid column-->
         </div>
         <!--Grid row-->
       </div>
@@ -41,10 +39,10 @@
 
         readMoreBtn.addEventListener("click", (e) => {
           text.classList.toggle("show-more");
-          if (readMoreBtn.innerHTML === "Baca Selengkapnya") {
-              readMoreBtn.innerHTML = "Lebih sedikit";
+          if (readMoreBtn.innerHTML === "Lihat Deskripsi") {
+              readMoreBtn.innerHTML = "Tutup";
           } else {
-              readMoreBtn.innerHTML = "Baca Selengkapnya";
+              readMoreBtn.innerHTML = "Lihat Deskripsi";
           }
         });
     </script>
