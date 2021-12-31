@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walking Library</title>
+    <title>WalkingLibrary | <?= $title; ?></title>
     <link rel="shortcut icon" type="image" href="<?php echo base_url('public/gambar/logo.png') ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -37,34 +37,63 @@
                             Kategori
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Anak-Anak</a></li>
-                            <li><a class="dropdown-item" href="#">Remaja</a></li>
-                            <li><a class="dropdown-item" href="#">Dewasa</a></li>
-                            <li><a class="dropdown-item" href="#">Lansia</a></li>
+                            <li><a class="dropdown-item" href="#!">Pemrograman</a></li>
+                            <li><a class="dropdown-item" href="#!">Remaja</a></li>
+                            <li><a class="dropdown-item" href="#!">Kesehatan</a></li>
+                            <li><a class="dropdown-item" href="#!">Umum</a></li>
                         </ul>
                     </li>
                 </ul>
 
                 <!-- Search -->
-                <form class="d-flex search input-group ">
-                    <input class="form-control search" type="search" placeholder="Cari Produk, Judul Buku, Penulis" aria-label="Search">
-                    <span class="input-group-text"><button href="#!"><i class="fas fa-search"></i></button></span>
-                </form>
+                <?php echo form_open('home/search') ?>
+                    <div class="d-flex search input-group ">
+                        <input name="keyword" class="form-control" type="search" placeholder="Cari Judul Buku, Penulis" aria-label="Search">
+                        <span class="input-group-text"><button type="submit"><i class="fas fa-search"></i></button></span>
+                    </div>
+                <?php echo form_close() ?>
 
                 <!-- Profile -->
+                <?php
+                    if($this->session->has_userdata('email')){
+                        $email = $this->session->email;
+                    }else{
+                        $email = 'Guest';
+                    }
+                ?>
                 <div class="d-flex identity-profile ml-2">
                     <div class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle link-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-user-circle fa-2x"></i> 
-                            <span>Username</span>
+                            <span>
+                                 <?=$email?>
+                            </span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <?php 
+                                if ($this->session->has_userdata('email')) { ?>
+                                <?php 
+                                } else { ?>
+                                    <li><a class="dropdown-item py-2" href="<?= base_url('index.php/auth/registration') ?>">Register</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="login-btn dropdown-item py-2" href="<?= base_url('index.php/auth/login') ?> ">Login</a></li>
+                            <?php
+                                }
+                            ?>
+
+                            <?php
+                                if ($this->session->has_userdata('email')) { ?> 
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="logout-btn dropdown-item py-2" href="<?= base_url('index.php/auth/logout') ?>"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                            <?php
+                                } 
+                            ?>
+                            
+                            
                             <!-- if else account -->
-                            <li><a class="dropdown-item py-2" href="#">Register</a></li>
-                            <li><a class="dropdown-item py-2" href="#">Login</a></li>
-                            <li><a class="logout-btn dropdown-item py-2" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                            
+                            
                         </ul>
                     </div>
                 </div>

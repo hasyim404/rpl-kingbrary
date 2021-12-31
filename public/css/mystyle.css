@@ -56,7 +56,7 @@ body{
 }
 
 .nav-item .login-btn {
-    background-color: #f01d1d;
+    background-color: #2e70ff;
     opacity: 0.8;
     border-radius: 10px;
     color: #FFFBFB;
@@ -76,6 +76,11 @@ body{
     /* height: 30px; */
     background-color: #D2D2D2;
     border: none;
+}
+
+.search input {
+    border-radius: 35px;
+    background-color: #e9ecef;
 }
 
 .search span button{
@@ -390,4 +395,8 @@ footer{
 
 .rounded-carousel {
     background-color: rgb(92, 92, 92);
+}
+
+.form-style .input-group{
+    border-radius: 0px;
 }

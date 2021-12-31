@@ -1,5 +1,6 @@
 
 <div class="container pt-5 px-5">
+  <?= $this->session->flashdata('message'); ?>
   <div class="row">
       <div class="col-sm-8">
         <!-- Carousel -->
@@ -47,7 +48,7 @@
         <a href="<?php echo base_url('index.php/home/detail/').$data['id'];?>" class="link-detail">
           <div class="card h-100">
             <img src="<?php echo base_url('public/gambar/').$data['gambar'];?>" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="judul card-body">
               <p class="card-text"><?= $data['nama']; ?></p>
             </div>
             <div class="card-footer">
@@ -60,4 +61,3 @@
     <?php endforeach; ?>
   </div>
 </div>
-
