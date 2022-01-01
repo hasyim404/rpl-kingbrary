@@ -37,6 +37,12 @@ class Auth extends CI_Controller {
                     'role_id' => $user['role_id']
                 ];
                 $this->session->set_userdata($data);
+                $this->session->set_flashdata(
+                'message', '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Login Berhasil!</strong> Selamat datang '.$data['nama'].
+                '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>'
+            );
                 redirect(base_url());
             } else {
                 $this->session->set_flashdata(
@@ -88,11 +94,11 @@ class Auth extends CI_Controller {
             $this->db->insert('user', $data);
             $this->session->set_flashdata(
                 'message', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Registrasi Berhasil!</strong> Selamat Datang '.$data['nama'].
+                <strong>Registrasi Berhasil!</strong> '.
                 '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>'
             );
-            redirect(base_url());
+            redirect(base_url('index.php/auth/login'));
         }
         
 	}

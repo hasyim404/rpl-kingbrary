@@ -22,6 +22,7 @@ class Home extends CI_Controller {
 	public function detail($id)
 	{
 		$data['title'] = 'Detail Buku';
+		$data['buku'] = $this->buku->get_all();
 		$data['buku'] = $this->buku->get_id($id);
 		$this->load->view('home/layouts/navbar.php', $data);
 		$this->load->view('home/detail.php', $data);
@@ -31,14 +32,16 @@ class Home extends CI_Controller {
 	public function keranjang()
 	{
 		$data['title'] = 'Keranjang';
+		
 		$this->load->view('home/layouts/navbar.php', $data);
 		$this->load->view('home/isikeranjang.php');
 		$this->load->view('home/layouts/footer.php');
 	}
 
-	public function checkout()
+	public function checkout($id)
 	{
 		$data['title'] = 'Checkout';
+		$data['buku'] = $this->buku->get_id($id);
 		$this->load->view('home/layouts/navbar.php', $data);
 		$this->load->view('home/checkout.php');
 		$this->load->view('home/layouts/footer.php');
@@ -59,5 +62,11 @@ class Home extends CI_Controller {
 		$this->load->view('home/layouts/footer.php');
 	}
 	
+	public function faq()
+	{
+		$this->load->view('home/layouts/navbar.php');
+		$this->load->view('home/faq.php');
+		$this->load->view('home/layouts/footer.php');
+	}
 
 }

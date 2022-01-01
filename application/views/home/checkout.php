@@ -42,15 +42,15 @@
             <div class="kotak">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="<?php echo base_url('public/gambar/rpl-php-example-image.jpeg') ?>" class="img-fluid rounded mx-auto d-block" alt="...">
+                        <img src="<?php echo base_url('public/gambar/').$buku->gambar; ?>" class="img-fluid rounded mx-auto d-block" alt="...">
                     </div>
 
                     <div class="col-sm">
-                        <h4>Rekayasa perangkat lunak Berorientasi Objek Menggunakan PHP</h4>
+                        <h4><?= $buku->nama; ?></h4>
                         <br>
                         <p>Soft Cover 1 barang</p>
                         <br>
-                        <h4>RP. 89.000</h4>
+                        <h4>Rp. <?= $buku->harga; ?></h4>
 
                         <!-- Tambah/kurang -->
                         <div class="d-flex justify-content-start">
@@ -59,7 +59,7 @@
                             <button class="plus"><i class="fas fa-plus"></i></button>
                         </div>
                         <div class="d-flex justify-content-end">
-                            <h4>RP. 89.000</h4>
+                            <h4>Rp. <?= $buku->harga; ?></h4>
                         </div>
                         <div class="d-flex justify-content-end hapus">
                             <a href="#!"><i class="fas fa-trash-alt"></i> Hapus</a>
@@ -73,7 +73,7 @@
                     <div class="navbar navbar-light bg-success">
                         <div class="container-fluid">
                             <span class="navbar-brand mb-0 h1 text-white">Total Pesanan = 1</span>
-                            <span class="navbar-brand mb-0 h1 text-white">RP 89.000</span>
+                            <span class="navbar-brand mb-0 h1 text-white">Rp. <?= $buku->harga; ?></span>
                         </div>
                     </div>
                 </div>
@@ -88,24 +88,24 @@
 
                 <div class="checkoutFont pt-2 pb-3 d-flex justify-content-between">
                     <h5>Total Belanja</h5>   
-                    <h5>RP. 89.000</h5>
+                    <h5>Rp. <?= $buku->harga; ?></h5>
                 </div>
                 <div class="checkoutFont pt-2 pb-3 d-flex justify-content-between">
                     <h5>Biaya Pengiriman</h5>   
-                    <h5>RP. 89.000</h5>
+                    <h5>-</h5>
                 </div>
                 <div class="checkoutFont pt-2 pb-3 d-flex justify-content-between">
                     <h5>Biaya Asuransi</h5>   
-                    <h5>RP. 89.000</h5>
+                    <h5>-</h5>
                 </div>
                 <div class="checkoutFont pt-2 pb-3 d-flex justify-content-between">
                     <h5>Diskon Belanja</h5>   
-                    <h5>RP. 89.000</h5>
+                    <h5>-</h5>
                 </div>
                 <hr>
                 <div class="checkoutFont pt-2 pb-3 d-flex justify-content-between">
                     <h4>Total : </h4>   
-                    <h4>RP. 89.000</h4>
+                    <h4>Rp. <?= $buku->harga; ?></h4>
                 </div>
                 <div class="checkoutFont d-flex justify-content-center">
                     <button class="btn-sm btnBeliSekarang">Lanjut Ke Pembayaran Yuk</button>

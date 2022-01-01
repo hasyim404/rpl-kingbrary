@@ -88,8 +88,12 @@
                         <h5><?= $buku->harga; ?></h5>
                     </div>
                     <div class="btnEnd d-flex justify-content-between">
-                        <button class="btn-sm btnKeranjang"><i class="fas fa-shopping-cart"></i> keranjang</button>
-                        <button class="btn-sm btnBeliSekarang">Beli Sekarang</button>
+                        <a href="#!" class="link-detail">
+                            <button class="btn-sm btnKeranjang"><i class="fas fa-shopping-cart"></i> Keranjang</button>    
+                        </a>
+                        <a href="<?php echo base_url('index.php/home/checkout/').$buku->id;?>" class="link-detail">
+                            <button class="btn-sm btnBeliSekarang">Beli Sekarang</button>
+                        </a>
                     </div>
                     
                 </div>

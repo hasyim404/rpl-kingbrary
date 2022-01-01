@@ -8,14 +8,14 @@
     <link rel="shortcut icon" type="image" href="<?php echo base_url('public/gambar/logo.png') ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/mystyle.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/style.css');?>">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
     <!-- Navbar Info -->
     <nav class="nav-info d-flex justify-content-end">
         <a href="#about">About</a>
-        <a href="#!">FaQ</a>
+        <a href="<?= base_url('index.php/home/faq') ?>">FaQ</a>
     </nav>
 
     <!-- Main Navbar -->
@@ -91,15 +91,12 @@
                             ?>
                             
                             
-                            <!-- if else account -->
-                            
-                            
                         </ul>
                     </div>
                 </div>
 
                 <!-- Cart -->
-                <a href="#" class=""><img src="<?php echo base_url('public/gambar/keranjang.svg')?>" alt=""></a>    
+                <a href="<?= base_url('index.php/home/keranjang') ?>" class=""><img src="<?php echo base_url('public/gambar/keranjang.svg')?>" alt=""></a>    
             </div>
         </div>
     </nav>
